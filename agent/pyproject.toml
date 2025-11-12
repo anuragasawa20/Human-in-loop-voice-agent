@@ -1,0 +1,22 @@
+[project]
+name = "salon-agent"
+version = "0.1.0"
+description = "Human-in-the-loop AI agent for salon reception with semantic search"
+requires-python = ">=3.9"
+dependencies = [
+    "livekit-agents[silero,turn-detector]~=1.2",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.27.0",
+    "firebase-admin>=6.4.0",
+    "openai>=1.12.0",
+    "chromadb>=0.4.22",
+    "livekit>=1.0.18",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
