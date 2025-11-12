@@ -44,6 +44,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+# writing changes for the backend
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """

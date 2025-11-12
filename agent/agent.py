@@ -13,6 +13,8 @@ Architecture:
 5. request_help() tool for escalation
 """
 
+# defining the Agent and livekit
+
 import asyncio
 import logging
 import os
